@@ -46,9 +46,9 @@ while remainingBidders > 1:
 				while nextBidderBid < max(previousBids) + 1 :
 					print "Your bid must be " + bidIncrementString + " higher than last round's highest bid."
 					nextBidderBid = int(raw_input("{}, what is your next bid? ".format(x)))
-		listOfBids.remove(y)
-		#previousBids.insert(bidderNumber, nextBidderBid)
-		listOfBids.insert(bidderNumber, nextBidderBid)
+			listOfBids.remove(y)
+			#previousBids.insert(bidderNumber, nextBidderBid)
+			listOfBids.insert(bidderNumber, nextBidderBid)
 	nextBidList = zip(listOfBidderNames, listOfBids)
 	print ""
 	print "Thank you for your bids. The results are as follows:"
@@ -59,7 +59,7 @@ while remainingBidders > 1:
 		else:
 			print x + " bid $" + str(y) + "."
 	#ask for next bids
-	if remainingBidders > 2:
+	if remainingBidders > 1:
 		print ""
 		print "Based on the last round of bids, please place your next bid."
 		print "If you do not wish to continue, bid 0:"
